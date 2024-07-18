@@ -1,0 +1,129 @@
+:root {
+    --color-white: #fff;
+    --color-dark1: #272727;
+    --color-dark2: #2d2d2d;
+    --color-dark3: #414141;
+    --color-dark4: #1c1c1c;
+    --color-dark5: #343434;
+    --color-dark6: #b040ff;
+    --gradient-start: #ff0000; /* Cor inicial do gradiente (vermelho) */
+    --gradient-end: #ffa500;   /* Cor final do gradiente (laranja) */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-dark1);
+    color: var(--color-white);
+}
+
+.header {
+    position: relative;
+    background-image: url('trovao_cinza2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.7); /* Ajuste a opacidade conforme necessário */
+    background-blend-mode: multiply; /* Modo de mistura para criar o efeito de transparência */
+}
+
+.logo_header_png {
+    width: 150px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.nav {
+    position: relative;
+    background-image: url('trovao_cinza.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.3); /* Ajuste a opacidade conforme necessário */
+    background-blend-mode: multiply; /* Modo de mistura para criar o efeito de transparência */
+    text-align: center;
+    overflow: hidden;
+}
+
+.nav img {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 600px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.headline p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 24px; /* Ajuste conforme necessário */
+    line-height: 1.5; /* Ajuste conforme necessário */
+}
+
+.headline .caligrafia-font {
+    padding-bottom: 0px;
+    font-family: 'Dancing Script', cursive; /* Aplica a fonte Dancing Script ao texto desejado */
+    font-size: 32px;
+    font-weight: 900; /* Ajuste o peso da fonte conforme necessário */
+}
+
+.headline .caligrafia-font-baixo {
+    padding-top: 0px;
+    font-family: 'Dancing Script', cursive; /* Aplica a fonte Dancing Script ao texto desejado */
+    font-size: 32px;
+    font-weight: 900; /* Ajuste o peso da fonte conforme necessário */
+}
+
+.golden-text {
+    background: linear-gradient(to right, #f5af19, #f12711);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav iframe {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 560px;
+    height: 315px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.button {
+    background-color: #ce0909;
+    background-image: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    transition: background-image 0.3s ease;
+}
+
+.button:hover {
+    background-image: linear-gradient(to left, var(--gradient-start), var(--gradient-end));
+}
